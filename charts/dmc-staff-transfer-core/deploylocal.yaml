@@ -1,0 +1,62 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: stafftransfercore-data-sources
+  #namespace: stafftransfercore                     # stafftransfercore-[dev|qa|stag|prod]
+data:
+  appsettings.development.json: |-
+    {
+      "AgencyData": {
+        "User": "STAFF2Valhalla",
+        "AgencyCode": "STAFF",
+        "Password": "ST4FFV4llh4ll4",
+        "Agency": "STAFF"
+      },
+      "OperacionesServiceApiClientOptions": {
+        "BaseAddress": "http://cuponerasprueb.bestday.com/OperacionesServiceDEV/OperacionesService.svc/"
+      },
+      "ValhallaApiClientOptions": {
+        "BaseAddress": "http://cuponerasprueb.bestday.com/ValhallaDEV/api/services/add"
+      },
+      "Logging": {
+        "IncludeScopes": true
+        "LogLevel": {
+          "Default": "Debug",
+          "System": "Information",
+          "Microsoft": "Information"
+        }
+      }
+    }
+---
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: stafftransfercore-k8s                                       # stafftransfercore
+  #namespace: stafftransfercore                                  # stafftransfercore-[dev|qa|qa|prod]
+spec:
+  schedule: "*/1 * * * *"                                       # cada media hora
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            app: stafftransfercore                              # stafftransfercore
+        spec:
+          containers:
+            - name: stafftransfercore                           # stafftransfercore
+              image: stafftransfercore:lastest                  # gcr.io/bdtg-shared-infra-prod/dmc/api/stafftransfercore:xxxx
+              args: ["-it"]
+              env:
+              - name: ASPNETCORE_ENVIRONMENT
+                value: development
+              volumeMounts:
+              - name: config-volume
+                mountPath: /app/config
+          volumes:
+            - name: config-volume
+              configMap:
+                name: data-sources
+          restartPolicy: Never
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 1

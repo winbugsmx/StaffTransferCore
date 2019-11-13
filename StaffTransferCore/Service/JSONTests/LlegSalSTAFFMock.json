@@ -1,0 +1,30 @@
+[
+  {
+    "Clave_LLeg_Sal_auto": 1,
+    "Clave_Ag": "STAFF",
+    "Nombre": "STAFF NOVEDADES",
+    "Vuelo_Llega": "",
+    "Hora_Llega": "",
+    "Vuelo_Sale": "LD000",
+    "Hora_Sale": "1899-12-30 05:00:00.000",
+    "Observaciones": "",
+    "ConfirmAG": "0",
+    "Clave_Aero": "CUN",
+    "Clave_AeroIATA": "CUN",
+    "Activo": true
+  },
+  {
+    "Clave_LLeg_Sal_auto": 2,
+    "Clave_Ag": "STAFF",
+    "Nombre": "STAFF MANTTO",
+    "Vuelo_Llega": "",
+    "Hora_Llega": "",
+    "Vuelo_Sale": "LD000",
+    "Hora_Sale": "1899-12-30 05:30:00.000",
+    "Observaciones": "",
+    "ConfirmAG": "STAFF",
+    "Clave_Aero": "CUN",
+    "Clave_AeroIATA": "CUN",
+    "Activo": true
+  }
+]

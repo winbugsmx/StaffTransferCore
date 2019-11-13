@@ -1,0 +1,79 @@
+[
+  {
+    "Clave_Camion": 1,
+    "Clave_Lleg_sal_auto": 1,
+    "Clave_det_pax_auto": 1,
+    "Clav_Bus": 1,
+    "Cla_Ope": 179,
+    "Placa": "UTY976E",
+    "Chofer": 3250,
+    "Pax_Asignados": 9,
+    "Capacidad": 15
+  },
+  {
+    "Clave_Camion": 2,
+    "Clave_Lleg_sal_auto": 1,
+    "Clave_det_pax_auto": 2,
+    "Clav_Bus": 1,
+    "Cla_Ope": 179,
+    "Placa": "UTY976E",
+    "Chofer": 3250,
+    "Pax_Asignados": 9,
+    "Capacidad": 15
+  },
+  {
+    "Clave_Camion": 3,
+    "Clave_Lleg_sal_auto": 1,
+    "Clave_det_pax_auto": 3,
+    "Clav_Bus": 1,
+    "Cla_Ope": 179,
+    "Placa": "UTY976E",
+    "Chofer": 3250,
+    "Pax_Asignados": 9,
+    "Capacidad": 15
+  },
+  {
+    "Clave_Camion": 4,
+    "Clave_Lleg_sal_auto": 1,
+    "Clave_det_pax_auto": 4,
+    "Clav_Bus": 1,
+    "Cla_Ope": 179,
+    "Placa": "UTY976E",
+    "Chofer": 3250,
+    "Pax_Asignados": 9,
+    "Capacidad": 15
+  },
+  {
+    "Clave_Camion": 5,
+    "Clave_Lleg_sal_auto": 1,
+    "Clave_det_pax_auto": 5,
+    "Clav_Bus": 1,
+    "Cla_Ope": 179,
+    "Placa": "UTY976E",
+    "Chofer": 3250,
+    "Pax_Asignados": 9,
+    "Capacidad": 15
+  },
+  {
+    "Clave_Camion": 6,
+    "Clave_Lleg_sal_auto": 1,
+    "Clave_det_pax_auto": 6,
+    "Clav_Bus": 1,
+    "Cla_Ope": 179,
+    "Placa": "UTY976E",
+    "Chofer": 3250,
+    "Pax_Asignados": 9,
+    "Capacidad": 15
+  },
+  {
+    "Clave_Camion": 7,
+    "Clave_Lleg_sal_auto": 1,
+    "Clave_det_pax_auto": 7,
+    "Clav_Bus": 1,
+    "Cla_Ope": 179,
+    "Placa": "UTY976E",
+    "Chofer": 3250,
+    "Pax_Asignados": 9,
+    "Capacidad": 15
+  }
+]
